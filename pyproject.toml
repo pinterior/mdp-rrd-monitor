@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdp-rrd-monitor"
+version = "1.0.0"
+dependencies = [
+    "microdotphat >= 0.2.2"
+]
+
+[project.scripts]
+mdp-rrd-monitor = "mdp_rrd_monitor.main:main"
